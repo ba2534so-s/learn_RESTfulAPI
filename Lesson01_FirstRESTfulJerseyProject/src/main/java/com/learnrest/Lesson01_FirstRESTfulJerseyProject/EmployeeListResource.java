@@ -15,6 +15,8 @@ public class EmployeeListResource {
 	@Produces(MediaType.APPLICATION_XML)
 	public List<Employee> getEmployees() {
 		
+		Employee e1 = new Employee();
+		
 	}
 
 }
