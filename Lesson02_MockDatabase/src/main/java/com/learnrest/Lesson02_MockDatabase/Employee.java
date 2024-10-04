@@ -5,6 +5,7 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Employee {
 	
+	private int employeeId;
 	private String Name;
 	private int salary;
 	
