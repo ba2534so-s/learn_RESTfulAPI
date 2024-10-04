@@ -8,7 +8,7 @@ public class EmployeeResource {
 	public getEmployee() {
 		
 		Employee e = new Employee();
-		
+		e.setName("Mary Jane Johnson");
 	}
 
 }
