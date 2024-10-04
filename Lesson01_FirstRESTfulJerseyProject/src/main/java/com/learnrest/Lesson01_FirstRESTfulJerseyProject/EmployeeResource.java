@@ -7,6 +7,8 @@ public class EmployeeResource {
 	
 	public getEmployee() {
 		
+		Employee e = new Employee();
+		
 	}
 
 }
