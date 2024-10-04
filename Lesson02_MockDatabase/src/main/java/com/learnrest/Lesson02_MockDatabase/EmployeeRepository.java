@@ -24,7 +24,7 @@ public class EmployeeRepository {
 	}
 	
 	public List<Employee> getEmployees() {
-		
+		return employees;
 	}
 
 }
