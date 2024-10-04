@@ -1,5 +1,8 @@
 package com.learnrest.Lesson01_FirstRESTfulJerseyProject;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Employee {
 	
 	private String name;
