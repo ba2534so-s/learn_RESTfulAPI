@@ -1,11 +1,14 @@
 package com.learnrest.Lesson01_FirstRESTfulJerseyProject;
 
+import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 
 @Path("employees")
 public class EmployeeResource {
 	
-	public getEmployee() {
+	
+	@GET
+	public Employee getEmployee() {
 		
 		Employee e = new Employee();
 		e.setName("Mary Jane Johnson");
