@@ -22,5 +22,9 @@ public class EmployeeRepository {
 		employees.add(e2);
 		
 	}
+	
+	public List<Employee> getEmployees() {
+		
+	}
 
 }
