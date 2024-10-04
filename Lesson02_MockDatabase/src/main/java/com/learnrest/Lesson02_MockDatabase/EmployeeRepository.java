@@ -11,6 +11,7 @@ public class EmployeeRepository {
 		employees = new ArrayList<>();
 		
 		Employee e1 = new Employee();
+		e1.setName("Mary Jane Johnson");
 		
 	}
 
