@@ -3,13 +3,14 @@ package com.learnrest.Lesson01_FirstRESTfulJerseyProject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
 
 @Path("employees")
 public class EmployeeResource {
 	
 	
 	@GET
-	@Produces
+	@Produces(MediaType.APPLICATION_XML)
 	public Employee getEmployee() {
 		System.out.println("getEmployee is called.");
 		
