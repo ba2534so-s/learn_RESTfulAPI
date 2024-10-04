@@ -21,6 +21,7 @@ public class EmployeeListResource {
 		
 		Employee e2 = new Employee();
 		e2.setName("John Smith");
+		e2.setSalary(37000);
 		
 	}
 
