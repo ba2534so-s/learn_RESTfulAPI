@@ -26,6 +26,8 @@ public class EmployeeListResource {
 		
 		List<Employee> employees = Arrays.asList(e1, e2);
 		
+		return employees;
+		
 	}
 
 }
