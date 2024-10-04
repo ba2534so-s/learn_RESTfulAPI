@@ -11,10 +11,12 @@ public class EmployeeRepository {
 		employees = new ArrayList<>();
 		
 		Employee e1 = new Employee();
+		e1.setEmployeeId(101);
 		e1.setName("Mary Jane Johnson");
 		e1.setSalary(42000);
 		
 		Employee e2 = new Employee();
+		e2.setEmployeeId(102);
 		e2.setName("John Smith");
 		e2.setSalary(37000);
 		
