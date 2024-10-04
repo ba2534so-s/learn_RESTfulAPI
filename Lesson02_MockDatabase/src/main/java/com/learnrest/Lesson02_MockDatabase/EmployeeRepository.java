@@ -35,7 +35,7 @@ public class EmployeeRepository {
 				return e;
 			}
 		}
-		return new Employee();
+		return null;
 	}
 
 }
