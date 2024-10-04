@@ -15,6 +15,7 @@ public class EmployeeRepository {
 		e1.setSalary(42000);
 		
 		Employee e2 = new Employee();
+		e2.setName("John Smith");
 		
 	}
 
