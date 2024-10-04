@@ -28,5 +28,9 @@ public class EmployeeRepository {
 	public List<Employee> getEmployees() {
 		return employees;
 	}
+	
+	public Employee getEmployee(int id) {
+		
+	}
 
 }
