@@ -19,6 +19,7 @@ public class EmployeeRepository {
 		e2.setSalary(37000);
 		
 		employees.add(e1);
+		employees.add(e2);
 		
 	}
 
