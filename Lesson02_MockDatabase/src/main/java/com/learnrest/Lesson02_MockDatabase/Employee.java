@@ -13,7 +13,9 @@ public class Employee {
 	public int getEmployeeId() {
 		return employeeId;
 	}
-	
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
 	public String getName() {
 		return Name;
 	}
