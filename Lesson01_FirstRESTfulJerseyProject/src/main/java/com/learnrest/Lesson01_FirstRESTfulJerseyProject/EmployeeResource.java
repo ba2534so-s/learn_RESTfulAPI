@@ -9,6 +9,7 @@ public class EmployeeResource {
 		
 		Employee e = new Employee();
 		e.setName("Mary Jane Johnson");
+		e.setSalary(37000);
 	}
 
 }
