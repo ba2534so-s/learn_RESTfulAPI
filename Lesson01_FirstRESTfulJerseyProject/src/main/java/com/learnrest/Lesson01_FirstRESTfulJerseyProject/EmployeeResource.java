@@ -9,6 +9,7 @@ public class EmployeeResource {
 	
 	@GET
 	public Employee getEmployee() {
+		System.out.println("getEmployee is called.");
 		
 		Employee e = new Employee();
 		e.setName("Mary Jane Johnson");
