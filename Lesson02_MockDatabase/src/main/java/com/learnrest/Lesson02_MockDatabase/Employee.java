@@ -10,6 +10,10 @@ public class Employee {
 	private int salary;
 	
 	
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	
 	public String getName() {
 		return Name;
 	}
