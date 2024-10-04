@@ -16,6 +16,7 @@ public class EmployeeListResource {
 	public List<Employee> getEmployees() {
 		
 		Employee e1 = new Employee();
+		e1.setName("Mary Jane Johnson");
 		
 	}
 
