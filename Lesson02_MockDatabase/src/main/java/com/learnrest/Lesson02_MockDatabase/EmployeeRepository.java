@@ -18,6 +18,8 @@ public class EmployeeRepository {
 		e2.setName("John Smith");
 		e2.setSalary(37000);
 		
+		employees.add(e1);
+		
 	}
 
 }
