@@ -1,5 +1,6 @@
 package com.learnrest.Lesson01_FirstRESTfulJerseyProject;
 
+import java.util.Arrays;
 import java.util.List;
 
 import jakarta.ws.rs.GET;
@@ -22,6 +23,8 @@ public class EmployeeListResource {
 		Employee e2 = new Employee();
 		e2.setName("John Smith");
 		e2.setSalary(37000);
+		
+		List<Employee> employees = Arrays.asList(e1, e2);
 		
 	}
 
