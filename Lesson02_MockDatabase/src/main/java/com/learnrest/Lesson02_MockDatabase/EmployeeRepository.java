@@ -31,7 +31,9 @@ public class EmployeeRepository {
 	
 	public Employee getEmployee(int id) {
 		for (Employee e : employees) {
-			
+			if(e.getEmployeeId() == id) {
+				return e;
+			}
 		}
 	}
 
