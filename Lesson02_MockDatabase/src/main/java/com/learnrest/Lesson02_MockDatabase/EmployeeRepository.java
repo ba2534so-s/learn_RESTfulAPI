@@ -5,5 +5,9 @@ import java.util.List;
 public class EmployeeRepository {
 	
 	List<Employee> employees;
+	
+	public EmployeeRepository() {
+		
+	}
 
 }
