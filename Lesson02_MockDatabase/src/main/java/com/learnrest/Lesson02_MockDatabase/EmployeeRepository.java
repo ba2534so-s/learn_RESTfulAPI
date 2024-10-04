@@ -9,6 +9,9 @@ public class EmployeeRepository {
 	
 	public EmployeeRepository() {
 		employees = new ArrayList<>();
+		
+		Employee e1 = new Employee();
+		
 	}
 
 }
