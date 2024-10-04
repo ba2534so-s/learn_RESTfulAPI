@@ -19,6 +19,8 @@ public class EmployeeListResource {
 		e1.setName("Mary Jane Johnson");
 		e1.setSalary(42000);
 		
+		Employee e2 = new Employee();
+		
 	}
 
 }
