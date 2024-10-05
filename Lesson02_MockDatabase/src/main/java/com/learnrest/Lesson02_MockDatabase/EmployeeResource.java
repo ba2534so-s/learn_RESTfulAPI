@@ -24,7 +24,7 @@ public class EmployeeResource {
 	
 	@GET
 	@Path("employee/{id}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Employee getEmployee(@PathParam("id") int id) {
 		return repo.getEmployee(id);
 	}
