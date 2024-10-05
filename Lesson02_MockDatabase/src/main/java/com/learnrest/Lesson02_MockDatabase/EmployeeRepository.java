@@ -37,5 +37,9 @@ public class EmployeeRepository {
 		}
 		return null;
 	}
+	
+	public void create(Employee e) {
+		employees.add(e);
+	}
 
 }
