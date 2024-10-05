@@ -15,7 +15,7 @@ public class EmployeeResource {
 	EmployeeRepository repo = new EmployeeRepository();
 	
 	@GET
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public List<Employee> getEmployees() {
 		System.out.println("getEmplooyees getting called...");
 		
