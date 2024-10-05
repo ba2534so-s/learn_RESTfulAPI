@@ -19,5 +19,9 @@ public class EmployeeResource {
 		
 		return repo.getEmployees();
 	}
+	
+	public Employee createEmployee(Employee e1) {
+		
+	}
 
 }
