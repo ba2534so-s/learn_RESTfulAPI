@@ -9,8 +9,10 @@ public class EmployeeResource {
 	
 	EmployeeRepository repo = new EmployeeRepository();
 	
-	public List<EmployeeRepository> getEmployees() {
+	public List<Employee> getEmployees() {
 		System.out.println("getEmplooyees getting called...");
+		
+		return repo.getEmployees();
 	}
 
 }
