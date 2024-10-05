@@ -24,7 +24,7 @@ public class EmployeeResource {
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
 	public Employee getEmployee(int id) {
-		
+		return repo.getEmployee(id);
 	}
 	
 	@POST
