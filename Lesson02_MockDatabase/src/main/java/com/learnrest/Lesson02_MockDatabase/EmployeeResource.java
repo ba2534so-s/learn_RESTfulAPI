@@ -22,6 +22,7 @@ public class EmployeeResource {
 	}
 	
 	@GET
+	@Path("employee/{id}")
 	@Produces(MediaType.APPLICATION_XML)
 	public Employee getEmployee(int id) {
 		return repo.getEmployee(id);
