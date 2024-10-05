@@ -9,6 +9,7 @@ public class EmployeeRepository {
 	public EmployeeRepository() {
 		String url = "jdbc:postrgresql://localhost:5432/learn_rest";
 		String username ="postgres";
+		String password = "0";
 	}
 	
 	
