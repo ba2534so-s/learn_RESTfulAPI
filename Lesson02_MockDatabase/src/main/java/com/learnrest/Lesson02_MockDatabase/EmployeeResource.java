@@ -25,7 +25,7 @@ public class EmployeeResource {
 	@Path("employee")
 	public Employee createEmployee(Employee e1) {
 		System.out.println("Creating employee: " + e1);
-		
+		repo.create(e1);
 		
 		return e1;
 	}
