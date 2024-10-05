@@ -21,7 +21,8 @@ public class EmployeeResource {
 		return repo.getEmployees();
 	}
 	
-	
+	@GET
+	@Produces(MediaType.APPLICATION_XML)
 	public Employee getEmployee(int id) {
 		
 	}
