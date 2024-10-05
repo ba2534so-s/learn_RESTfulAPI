@@ -24,6 +24,8 @@ public class EmployeeResource {
 	@POST
 	@Path("employee")
 	public Employee createEmployee(Employee e1) {
+		System.out.println("Creating employee: " + e1);
+		
 		
 		return e1;
 	}
