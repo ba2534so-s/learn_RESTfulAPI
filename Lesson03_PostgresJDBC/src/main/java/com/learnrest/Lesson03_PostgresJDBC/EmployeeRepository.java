@@ -1,9 +1,15 @@
 package com.learnrest.Lesson03_PostgresJDBC;
 
-import java.util.List;
+import java.sql.Connection;
 
 public class EmployeeRepository {
 	
-	List<Employee> employees;
+	Connection con = null;
+	
+	public EmployeeRepository() {
+		
+	}
+	
+	
 
 }
