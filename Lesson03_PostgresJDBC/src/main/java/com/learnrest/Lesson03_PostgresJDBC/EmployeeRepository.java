@@ -7,7 +7,7 @@ public class EmployeeRepository {
 	Connection con = null;
 	
 	public EmployeeRepository() {
-		
+		String url = "jdbc:postrgresql://localhost:5432/learn_rest";
 	}
 	
 	
