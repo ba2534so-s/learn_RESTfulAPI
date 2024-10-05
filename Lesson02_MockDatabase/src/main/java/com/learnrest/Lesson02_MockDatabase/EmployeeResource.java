@@ -5,6 +5,7 @@ import java.util.List;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
@@ -24,7 +25,7 @@ public class EmployeeResource {
 	@GET
 	@Path("employee/{id}")
 	@Produces(MediaType.APPLICATION_XML)
-	public Employee getEmployee(int id) {
+	public Employee getEmployee(@PathParam("id") int id) {
 		return repo.getEmployee(id);
 	}
 	
