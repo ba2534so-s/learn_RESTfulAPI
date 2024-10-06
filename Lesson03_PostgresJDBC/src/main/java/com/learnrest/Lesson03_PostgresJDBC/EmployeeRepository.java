@@ -2,6 +2,7 @@ package com.learnrest.Lesson03_PostgresJDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -53,6 +54,7 @@ public class EmployeeRepository {
 		String query = "SELECT * FROM employees WHERE employeeId = ?";
 		
 		try {
+			PreparedStatement ps = con.prepareStatement(query);
 			
 		} catch (Exception e) {
 			System.out.println("There was an error getting the employee:  " + e.getMessage());
