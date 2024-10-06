@@ -15,7 +15,7 @@ public class EmployeeResource {
 	@GET
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public List<Employee> getEmployees() {
-		
+		return repo.getEmployees();
 		
 	}
 	
