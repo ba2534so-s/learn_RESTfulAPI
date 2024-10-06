@@ -68,6 +68,8 @@ public class EmployeeRepository {
 			System.out.println("There was an error getting the employee:  " + e.getMessage());
 		}
 		
+		return emp;
+		
 	}
 	
 	
