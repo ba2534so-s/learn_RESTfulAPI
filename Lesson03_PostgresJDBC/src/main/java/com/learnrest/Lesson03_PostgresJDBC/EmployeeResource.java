@@ -19,6 +19,10 @@ public class EmployeeResource {
 		
 	}
 	
+	public Employee getEmployee(int id) {
+		
+	}
+	
 	
 
 }
