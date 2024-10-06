@@ -4,5 +4,7 @@ import jakarta.ws.rs.Path;
 
 @Path("employees")
 public class EmployeeResource {
+	
+	EmployeeRepository repo = new EmployeeRepository();
 
 }
