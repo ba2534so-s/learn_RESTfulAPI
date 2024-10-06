@@ -45,6 +45,7 @@ public class EmployeeRepository {
 			System.out.println("There was an error setting up the db connection: " + e.getMessage());
 		}
 		
+		return employees;
 	}
 	
 	
