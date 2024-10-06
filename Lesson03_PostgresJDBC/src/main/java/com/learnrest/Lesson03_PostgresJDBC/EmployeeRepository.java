@@ -29,7 +29,7 @@ public class EmployeeRepository {
 		try {
 			
 		} catch (Exception e) {
-			
+			System.out.println("There was an error setting up the db connection: " + e.getMessage());
 		}
 		
 	}
