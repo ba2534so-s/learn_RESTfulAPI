@@ -61,6 +61,7 @@ public class EmployeeRepository {
 			if(rs.next()) {
 				emp.setEmployeeId(rs.getInt(1));
 				emp.setName(rs.getString(2));
+				emp.setSalary(rs.getInt(3));
 			}
 			
 		} catch (Exception e) {
