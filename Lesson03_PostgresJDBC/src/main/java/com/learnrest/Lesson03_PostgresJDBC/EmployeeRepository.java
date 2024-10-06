@@ -78,7 +78,8 @@ public class EmployeeRepository {
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(query);	
-			ps.setInt(0, emp.getEmployeeId());
+			ps.setInt(1, emp.getEmployeeId());
+			ps.setString(2, emp.getName());
 		
 		} catch (Exception e) {
 			System.out.println("There was an error creating the employee:  " + e.getMessage());
