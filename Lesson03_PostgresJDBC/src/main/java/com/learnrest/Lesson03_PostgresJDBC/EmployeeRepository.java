@@ -37,6 +37,8 @@ public class EmployeeRepository {
 				e.setEmployeeId(rs.getInt(1));
 				e.setName(rs.getString(2));
 				e.setSalary(rs.getInt(3));
+				
+				employees.add(e);
 			}
 			
 		} catch (Exception e) {
