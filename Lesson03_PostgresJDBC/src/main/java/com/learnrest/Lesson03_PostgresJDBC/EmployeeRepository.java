@@ -81,6 +81,7 @@ public class EmployeeRepository {
 			ps.setInt(1, emp.getEmployeeId());
 			ps.setString(2, emp.getName());
 			ps.setInt(3, emp.getSalary());
+			ps.executeUpdate();
 		
 		} catch (Exception e) {
 			System.out.println("There was an error creating the employee:  " + e.getMessage());
