@@ -33,12 +33,12 @@ public class EmployeeRepository {
 			ResultSet rs = st.executeQuery(query);
 			
 			while (rs.next()) {
-				Employee e = new Employee();
-				e.setEmployeeId(rs.getInt(1));
-				e.setName(rs.getString(2));
-				e.setSalary(rs.getInt(3));
+				Employee emp = new Employee();
+				emp.setEmployeeId(rs.getInt(1));
+				emp.setName(rs.getString(2));
+				emp.setSalary(rs.getInt(3));
 				
-				employees.add(e);
+				employees.add(emp);
 			}
 			
 		} catch (Exception e) {
@@ -49,8 +49,14 @@ public class EmployeeRepository {
 	}
 	
 	public Employee getEmployee(int id) {
-		Employee e = new Employee();
-		String query = "SELECT * FROM employees WHERE employeeId = ?"; 
+		Employee emp = new Employee();
+		String query = "SELECT * FROM employees WHERE employeeId = ?";
+		
+		try {
+			
+		} catch (Exception e) {
+			
+		}
 		
 	}
 	
