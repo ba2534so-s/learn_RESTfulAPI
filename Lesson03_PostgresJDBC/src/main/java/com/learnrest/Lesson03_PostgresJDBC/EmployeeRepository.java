@@ -2,6 +2,7 @@ package com.learnrest.Lesson03_PostgresJDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.List;
 
 public class EmployeeRepository {
 	
@@ -14,9 +15,14 @@ public class EmployeeRepository {
 		
 		try {
 			con = DriverManager.getConnection(url, username, password);
+			
 		} catch (Exception e) {
 			System.out.println("There was an error setting up the db connection: " + e.getMessage());
 		}
+	}
+	
+	public List<Employee> getEmployees() {
+		
 	}
 	
 	
