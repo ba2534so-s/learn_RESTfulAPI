@@ -31,6 +31,7 @@ public class EmployeeResource {
 	}
 	
 	@POST
+	@Path("employee")
 	public Employee createEmployee(Employee e) {
 		repo.createEmployee(e);
 		return e;
