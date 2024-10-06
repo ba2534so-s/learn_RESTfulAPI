@@ -59,6 +59,7 @@ public class EmployeeRepository {
 			ResultSet rs = ps.executeQuery();
 			
 			if(rs.next()) {
+				emp.setEmployeeId(id);
 				
 			}
 			
