@@ -2,6 +2,7 @@ package com.learnrest.Lesson03_PostgresJDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class EmployeeRepository {
 		
 		try {
 			Statement st = con.createStatement();
+			ResultSet rs = st.executeQuery(query);
 			
 		} catch (Exception e) {
 			System.out.println("There was an error setting up the db connection: " + e.getMessage());
