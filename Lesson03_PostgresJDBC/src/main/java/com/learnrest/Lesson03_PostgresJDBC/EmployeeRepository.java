@@ -77,7 +77,8 @@ public class EmployeeRepository {
 		String query = "INSERT INTO employees (employeeId, name, salary) VALUES (?, ?, ?)";
 		
 		try {
-			PreparedStatement ps = con.prepareStatement(query);			
+			PreparedStatement ps = con.prepareStatement(query);	
+			ps.setInt(0, emp.getEmployeeId());
 		
 		} catch (Exception e) {
 			System.out.println("There was an error creating the employee:  " + e.getMessage());
