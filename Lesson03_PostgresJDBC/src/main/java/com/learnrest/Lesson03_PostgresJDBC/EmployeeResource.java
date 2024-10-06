@@ -2,6 +2,7 @@ package com.learnrest.Lesson03_PostgresJDBC;
 
 import java.util.List;
 
+import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -32,6 +33,7 @@ public class EmployeeResource {
 	
 	@POST
 	@Path("employee")
+	@Consumes({MediaType.APPLICATION_XML})
 	public Employee createEmployee(Employee e) {
 		repo.createEmployee(e);
 		return e;
