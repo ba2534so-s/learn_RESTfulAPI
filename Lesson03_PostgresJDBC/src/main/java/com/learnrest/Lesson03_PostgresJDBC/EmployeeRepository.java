@@ -80,7 +80,7 @@ public class EmployeeRepository {
 			PreparedStatement ps = con.prepareStatement(query);			
 		
 		} catch (Exception e) {
-			
+			System.out.println("There was an error creating the employee:  " + e.getMessage());
 		}
 	}
 	
