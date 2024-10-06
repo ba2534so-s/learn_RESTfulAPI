@@ -24,7 +24,7 @@ public class EmployeeRepository {
 	
 	public List<Employee> getEmployees() {
 		List<Employee> employees = new ArrayList<Employee>();
-		
+		String query = "SELECT * FROM employees";
 		
 	}
 	
