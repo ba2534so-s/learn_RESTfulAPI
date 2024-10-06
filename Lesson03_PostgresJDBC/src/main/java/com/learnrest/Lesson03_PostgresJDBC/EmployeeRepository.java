@@ -48,6 +48,10 @@ public class EmployeeRepository {
 		return employees;
 	}
 	
+	public Employee getEmployee(int id) {
+		
+	}
+	
 	
 
 }
