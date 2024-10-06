@@ -29,6 +29,10 @@ public class EmployeeResource {
 		
 	}
 	
+	public Employee createEmployee(Employee e) {
+		
+	}
+	
 	
 	
 	
