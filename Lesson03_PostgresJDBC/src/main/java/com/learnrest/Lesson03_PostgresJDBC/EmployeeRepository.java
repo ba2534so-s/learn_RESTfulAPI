@@ -59,8 +59,8 @@ public class EmployeeRepository {
 			ResultSet rs = ps.executeQuery();
 			
 			if(rs.next()) {
-				emp.setEmployeeId(id);
-				
+				emp.setEmployeeId(rs.getInt(1));
+				emp.setName(rs.getString(2));
 			}
 			
 		} catch (Exception e) {
