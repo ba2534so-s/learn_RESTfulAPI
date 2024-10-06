@@ -74,7 +74,7 @@ public class EmployeeRepository {
 	
 	
 	public void createEmployee(Employee emp) {
-		
+		String query = "INSERT INTO employees (employeeId, name, salary) VALUES (?, ?, ?)";
 	}
 	
 	
