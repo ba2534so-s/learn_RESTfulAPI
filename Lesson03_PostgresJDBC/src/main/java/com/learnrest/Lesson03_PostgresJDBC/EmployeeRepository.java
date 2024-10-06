@@ -2,6 +2,7 @@ package com.learnrest.Lesson03_PostgresJDBC;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeRepository {
@@ -22,6 +23,8 @@ public class EmployeeRepository {
 	}
 	
 	public List<Employee> getEmployees() {
+		List<Employee> employees = new ArrayList<Employee>();
+		
 		
 	}
 	
