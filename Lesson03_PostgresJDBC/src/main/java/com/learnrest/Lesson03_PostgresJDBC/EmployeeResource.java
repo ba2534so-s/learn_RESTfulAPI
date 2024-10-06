@@ -21,7 +21,7 @@ public class EmployeeResource {
 	
 	
 	@GET
-	
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Employee getEmployee(int id) {
 		
 	}
