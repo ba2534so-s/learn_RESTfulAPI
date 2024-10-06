@@ -33,7 +33,7 @@ public class EmployeeRepository {
 			ResultSet rs = st.executeQuery(query);
 			
 			while (rs.next()) {
-				
+				Employee e = new Employee();
 			}
 			
 		} catch (Exception e) {
