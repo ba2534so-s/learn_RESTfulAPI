@@ -42,7 +42,7 @@ public class EmployeeRepository {
 			}
 			
 		} catch (Exception e) {
-			System.out.println("There was an error setting up the db connection: " + e.getMessage());
+			System.out.println("There was an error getting the employees:  " + e.getMessage());
 		}
 		
 		return employees;
@@ -55,7 +55,7 @@ public class EmployeeRepository {
 		try {
 			
 		} catch (Exception e) {
-			
+			System.out.println("There was an error getting the employee:  " + e.getMessage());
 		}
 		
 	}
