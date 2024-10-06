@@ -26,6 +26,12 @@ public class EmployeeRepository {
 		List<Employee> employees = new ArrayList<Employee>();
 		String query = "SELECT * FROM employees";
 		
+		try {
+			
+		} catch (Exception e) {
+			
+		}
+		
 	}
 	
 	
