@@ -13,11 +13,12 @@ public class EmployeeRepository {
 	Connection con = null;
 	
 	public EmployeeRepository() {
-		String url = "jdbc:postrgresql://localhost:5432/learn_rest";
+		String url = "jdbc:postgresql://localhost:5432/learn_rest";
 		String username ="postgres";
 		String password = "0";
 		
 		try {
+			Class.forName("org.postgresql.Driver");
 			con = DriverManager.getConnection(url, username, password);
 			
 		} catch (Exception e) {
