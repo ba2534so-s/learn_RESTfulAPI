@@ -75,13 +75,13 @@ public class EmployeeRepository {
 	
 	
 	public void createEmployee(Employee emp) {
-		String query = "INSERT INTO employees (employeeId, name, salary) VALUES (?, ?, ?)";
+		String query = "INSERT INTO employees (name, salary) VALUES (?, ?)";
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(query);	
-			ps.setInt(1, emp.getEmployeeId());
-			ps.setString(2, emp.getName());
-			ps.setInt(3, emp.getSalary());
+			
+			ps.setString(1, emp.getName());
+			ps.setInt(2, emp.getSalary());
 			ps.executeUpdate();
 		
 		} catch (Exception e) {
