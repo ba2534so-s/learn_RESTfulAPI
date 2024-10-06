@@ -33,7 +33,7 @@ public class EmployeeResource {
 	
 	@POST
 	@Path("employee")
-	@Consumes({MediaType.APPLICATION_XML})
+	@Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
 	public Employee createEmployee(Employee e) {
 		repo.createEmployee(e);
 		return e;
