@@ -58,6 +58,10 @@ public class EmployeeRepository {
 			ps.setInt(1, id);
 			ResultSet rs = ps.executeQuery();
 			
+			if(rs.next()) {
+				
+			}
+			
 		} catch (Exception e) {
 			System.out.println("There was an error getting the employee:  " + e.getMessage());
 		}
