@@ -19,6 +19,9 @@ public class EmployeeResource {
 		
 	}
 	
+	
+	@GET
+	
 	public Employee getEmployee(int id) {
 		
 	}
