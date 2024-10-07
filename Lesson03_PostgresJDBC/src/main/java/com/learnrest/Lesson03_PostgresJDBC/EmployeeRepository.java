@@ -107,7 +107,7 @@ public class EmployeeRepository {
 		String query = "DELETE FROM employee WHERE employeeId = ?";
 	
 		try {
-			
+			PreparedStatement ps = con.prepareStatement(query);
 		} catch (Exception e) {
 			System.out.println("There was an error deleting the employee:  " + e.getMessage());
 		}
