@@ -93,6 +93,7 @@ public class EmployeeRepository {
 		String query = "UPDATE employees SET name=?, salary=? WHERE id=?";
 		
 		try {
+			PreparedStatement ps = con.prepareStatement(query);
 			
 		} catch (Exception e) {
 			System.out.println("There was an error updating the employee:  " + e.getMessage());
