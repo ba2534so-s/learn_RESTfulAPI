@@ -8,7 +8,7 @@ import jakarta.persistence.Column;
 public class Employee {
 	
 	@Id
-	@Column(name="employeeId")
+	@Column(name="employeeid")
 	private int employeeId;
 	private String name;
 	private int salary;
