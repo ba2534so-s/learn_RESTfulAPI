@@ -92,6 +92,12 @@ public class EmployeeRepository {
 	public void updateEmployee(Employee emp) {
 		String query = "UPDATE employees SET name=?, salary=? WHERE id=?";
 		
+		try {
+			
+		} catch (Exception e) {
+			
+		}
+		
 		
 	}
 	
