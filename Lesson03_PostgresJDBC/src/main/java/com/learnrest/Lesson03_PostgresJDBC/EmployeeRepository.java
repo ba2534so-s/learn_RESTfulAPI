@@ -109,7 +109,7 @@ public class EmployeeRepository {
 		try {
 			
 		} catch (Exception e) {
-			
+			System.out.println("There was an error deleting the employee:  " + e.getMessage());
 		}
 	}
 	
