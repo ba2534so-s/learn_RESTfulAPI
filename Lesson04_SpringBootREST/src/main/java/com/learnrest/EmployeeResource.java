@@ -2,14 +2,16 @@ package com.learnrest;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 
 @RestController
 public class EmployeeResource {
 	
 	
 	public List<Employee> getEmployees() {
+		
+		List<Employee> employees = new ArrayList<>();
 		
 		Employee e1 = new Employee();
 		e1.setName("Mary Jane Johnson");
@@ -19,7 +21,8 @@ public class EmployeeResource {
 		e2.setName("John Smith");
 		e2.setSalary(37000);
 		
-		List<Employee> employees = Arrays.asList(e1, e2);
+		employees.add(e1);
+		employees.add(e2);
 		
 		return employees;
 		
