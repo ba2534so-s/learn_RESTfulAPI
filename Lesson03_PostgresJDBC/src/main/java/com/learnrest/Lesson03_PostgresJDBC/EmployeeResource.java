@@ -46,7 +46,7 @@ public class EmployeeResource {
 	public Employee updateEmployee(Employee e) {
 		
 		if (repo.getEmployee(e.getEmployeeId()) == null) {
-			
+			repo.createEmployee(e);
 		} else {
 			repo.updateEmployee(e);
 		}
