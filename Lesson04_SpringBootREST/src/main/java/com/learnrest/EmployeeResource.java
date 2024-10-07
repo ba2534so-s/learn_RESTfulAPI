@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class EmployeeResource {
 	
+	EmployeeResource repo;
+	
 	@GetMapping("employees")
 	public List<Employee> getEmployees() {
 		
