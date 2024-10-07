@@ -60,7 +60,7 @@ public class EmployeeResource {
 		Employee e = repo.getEmployee(id);
 		
 		if (e.getEmployeeId() != 0) {
-			
+			repo.deleteEmployee(id);
 		}
 		
 	}
