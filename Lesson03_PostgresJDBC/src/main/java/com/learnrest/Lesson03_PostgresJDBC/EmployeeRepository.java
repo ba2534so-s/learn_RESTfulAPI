@@ -109,6 +109,7 @@ public class EmployeeRepository {
 		try {
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setInt(1, id);
+			ps.executeUpdate();
 		} catch (Exception e) {
 			System.out.println("There was an error deleting the employee:  " + e.getMessage());
 		}
