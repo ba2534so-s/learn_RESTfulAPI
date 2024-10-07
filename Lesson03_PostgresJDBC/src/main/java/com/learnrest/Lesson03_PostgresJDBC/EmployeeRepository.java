@@ -106,6 +106,11 @@ public class EmployeeRepository {
 	public void deleteEmployee(int id) {
 		String query = "DELETE FROM employee WHERE employeeId = ?";
 	
+		try {
+			
+		} catch (Exception e) {
+			
+		}
 	}
 	
 	
