@@ -41,6 +41,7 @@ public class EmployeeResource {
 	
 	
 	public Employee updateEmployee(Employee e) {
+		repo.updateEmployee(e);
 		
 	}
 	
