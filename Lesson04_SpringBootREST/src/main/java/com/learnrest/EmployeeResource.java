@@ -1,5 +1,6 @@
 package com.learnrest;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -12,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class EmployeeResource {
 	
-	EmployeeResource repo;
+	@Autowired
+	EmployeeRepository repo;
 	
 	@GetMapping("employees")
 	public List<Employee> getEmployees() {
