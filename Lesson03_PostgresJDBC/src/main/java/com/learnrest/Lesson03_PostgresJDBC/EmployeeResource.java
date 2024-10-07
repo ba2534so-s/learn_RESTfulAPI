@@ -41,6 +41,7 @@ public class EmployeeResource {
 	}
 	
 	@PUT
+	@Path("employee")
 	@Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Employee updateEmployee(Employee e) {
 		repo.updateEmployee(e);
