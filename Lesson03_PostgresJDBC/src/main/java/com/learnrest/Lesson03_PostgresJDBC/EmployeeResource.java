@@ -63,6 +63,8 @@ public class EmployeeResource {
 			repo.deleteEmployee(id);
 		}
 		
+		return e;
+		
 	}
 	
 	
