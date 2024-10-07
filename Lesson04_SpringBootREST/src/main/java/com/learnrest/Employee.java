@@ -1,7 +1,11 @@
 package com.learnrest;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class Employee {
 	
+
 	private int employeeId;
 	private String name;
 	private int salary;
