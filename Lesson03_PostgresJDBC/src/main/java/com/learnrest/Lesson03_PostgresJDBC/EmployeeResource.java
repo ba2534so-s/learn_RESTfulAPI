@@ -53,6 +53,10 @@ public class EmployeeResource {
 		return e;
 	}
 	
+	public Employee deleteEmployee(@PathParam("id") int id) {
+		
+	}
+	
 	
 
 }
