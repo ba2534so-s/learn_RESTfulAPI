@@ -104,7 +104,7 @@ public class EmployeeRepository {
 	}
 	
 	public void deleteEmployee(int id) {
-		String query = "DELETE FROM employee WHERE employeeId = ?";
+		String query = "DELETE FROM employees WHERE employeeId = ?";
 	
 		try {
 			PreparedStatement ps = con.prepareStatement(query);
