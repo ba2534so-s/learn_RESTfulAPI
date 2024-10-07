@@ -94,6 +94,7 @@ public class EmployeeRepository {
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, emp.getName());
 			
 		} catch (Exception e) {
 			System.out.println("There was an error updating the employee:  " + e.getMessage());
