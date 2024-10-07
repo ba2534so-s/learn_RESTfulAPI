@@ -89,6 +89,32 @@ public class EmployeeRepository {
 		}
 	}
 	
+	public void updateEmployee(Employee emp) {
+		String query = "UPDATE employees SET name=?, salary=? WHERE employeeId=?";
+		
+		try {
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, emp.getName());
+			ps.setInt(2, emp.getSalary());
+			ps.setInt(3, emp.getEmployeeId());
+			ps.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("There was an error updating the employee:  " + e.getMessage());
+		}
+	}
+	
+	public void deleteEmployee(int id) {
+		String query = "DELETE FROM employees WHERE employeeId = ?";
+	
+		try {
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setInt(1, id);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			System.out.println("There was an error deleting the employee:  " + e.getMessage());
+		}
+	}
+	
 	
 
 }

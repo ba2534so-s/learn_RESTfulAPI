@@ -3,8 +3,10 @@ package com.learnrest.Lesson03_PostgresJDBC;
 import java.util.List;
 
 import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
@@ -39,7 +41,31 @@ public class EmployeeResource {
 		return e;
 	}
 	
+	@PUT
+	@Path("employee")
+	@Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	public Employee updateEmployee(Employee e) {
+		
+		if (repo.getEmployee(e.getEmployeeId()).getEmployeeId() == 0) {
+			repo.createEmployee(e);
+		} else {
+			repo.updateEmployee(e);
+		}
+		return e;
+	}
 	
+	@DELETE
+	@Path("employee/{id}")
+	public Employee deleteEmployee(@PathParam("id") int id) {
+		Employee e = repo.getEmployee(id);
+		
+		if (e.getEmployeeId() != 0) {
+			repo.deleteEmployee(id);
+		}
+		
+		return e;
+		
+	}
 	
 	
 
