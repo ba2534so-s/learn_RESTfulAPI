@@ -45,7 +45,7 @@ public class EmployeeResource {
 	@Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Employee updateEmployee(Employee e) {
 		
-		if (repo.getEmployee(e.getEmployeeId()) == null) {
+		if (repo.getEmployee(e.getEmployeeId()).getEmployeeId() == 0) {
 			repo.createEmployee(e);
 		} else {
 			repo.updateEmployee(e);
