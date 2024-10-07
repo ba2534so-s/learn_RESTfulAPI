@@ -59,6 +59,10 @@ public class EmployeeResource {
 	public Employee deleteEmployee(@PathParam("id") int id) {
 		Employee e = repo.getEmployee(id);
 		
+		if (e.getEmployeeId() != 0) {
+			
+		}
+		
 	}
 	
 	
