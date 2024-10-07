@@ -2,11 +2,13 @@ package com.learnrest;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Column;
 
-@Entity
+@Entity(name="employees")
 public class Employee {
 	
 	@Id
+	@Column
 	private int employeeId;
 	private String name;
 	private int salary;
