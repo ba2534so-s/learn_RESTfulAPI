@@ -5,6 +5,7 @@ import java.util.List;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
@@ -39,7 +40,7 @@ public class EmployeeResource {
 		return e;
 	}
 	
-	
+	@PUT
 	public Employee updateEmployee(Employee e) {
 		repo.updateEmployee(e);
 		return e;
