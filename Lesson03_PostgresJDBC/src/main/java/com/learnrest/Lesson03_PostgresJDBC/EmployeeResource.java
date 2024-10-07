@@ -55,6 +55,7 @@ public class EmployeeResource {
 	}
 	
 	@DELETE
+	@Path("employee/{id}")
 	public Employee deleteEmployee(@PathParam("id") int id) {
 		
 	}
