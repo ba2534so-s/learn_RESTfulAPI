@@ -44,7 +44,12 @@ public class EmployeeResource {
 	@Path("employee")
 	@Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	public Employee updateEmployee(Employee e) {
-		repo.updateEmployee(e);
+		
+		if (repo.getEmployee(e.getEmployeeId()) == null) {
+			
+		} else {
+			repo.updateEmployee(e);
+		}
 		return e;
 	}
 	
